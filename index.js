@@ -7,7 +7,10 @@ module.exports = {
     'no-else-return': 'error',
     'no-implicit-coercion': 'error',
     'no-lonely-if': 'error',
-    'no-magic-numbers': ['error', { enforceConst: true, ignoreDefaultValues: true }],
+    'no-magic-numbers': [
+      'error',
+      { enforceConst: true, ignore: [-1, 0, 1], ignoreDefaultValues: true },
+    ],
     'no-negated-condition': 'error',
     'no-nested-ternary': 'error',
     'no-restricted-properties': [
