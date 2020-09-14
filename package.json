@@ -3,6 +3,7 @@
   "version": "1.1.1",
   "description": "ESLint shareable config for Zehitomo",
   "main": "index.js",
+  "author": "Zehitomo",
   "contributors": [
     {
       "email": "alex@zehitomo.com",
@@ -11,9 +12,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zehitomo/eslint-config.git"
+    "url": "github:zehitomo/eslint-config"
   },
-  "author": "Zehitomo",
   "license": "ISC",
   "keywords": [
     "eslint",

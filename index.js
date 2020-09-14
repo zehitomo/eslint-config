@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   extends: ['eslint:recommended', 'prettier'],
   rules: {
@@ -7,7 +9,7 @@ module.exports = {
     eqeqeq: 'error',
     'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
     'id-length': ['error', { exceptions: ['i', 'id', 'n'], min: 3 }],
-    'new-cap': 'error',
+    'new-cap': 'warn',
     'no-array-constructor': 'error',
     'no-console': 'error',
     'no-else-return': 'error',
@@ -27,7 +29,7 @@ module.exports = {
     'no-new-object': 'error',
     'no-new-wrappers': 'error',
     'no-param-reassign': 'error',
-    'no-plus-plus': 'error',
+    'no-plusplus': 'error',
     'no-restricted-globals': [
       'error',
       { message: 'Use Number.isFinite instead.', name: 'isFinite' },
@@ -153,7 +155,7 @@ module.exports = {
     radix: 'error',
     'require-await': 'error',
     'require-yield': 'error',
-    'sort-keys': ['warn', { natural: true }],
+    'sort-keys': ['warn', 'asc', { natural: true }],
     'spaced-comment': ['error', 'always', { markers: ['/'] }],
     strict: ['error', 'global'],
     yoda: 'error',

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.2
+
+- Fix `no-plusplus`, `sort-keys` rule definitions
+
 ## 1.1.1
 
 - Bump `eslint` version => 7.9.0
