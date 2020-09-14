@@ -8,7 +8,7 @@ module.exports = {
     'class-methods-use-this': 'error',
     eqeqeq: 'error',
     'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
-    'id-length': ['error', { exceptions: ['i', 'id', 'n'], min: 3 }],
+    'id-length': ['error', { exceptions: ['en', 'i', 'id', 'ja', 'n'], min: 3 }],
     'new-cap': 'warn',
     'no-array-constructor': 'error',
     'no-console': 'error',
