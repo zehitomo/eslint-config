@@ -1,10 +1,14 @@
 # Changelog
 
-## 1.1.3
+## 1.1.4
+
+- Add `_` and `t` to allowed identifiers list
+
+## 1.1.3
 
 - Add `en` and `ja` to allowed identifiers list
 
-## 1.1.2
+## 1.1.2
 
 - Fix `no-plusplus`, `sort-keys` rule definitions
 

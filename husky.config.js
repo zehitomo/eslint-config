@@ -1,5 +1,3 @@
-module.exports = {
-  hooks: {
-    'pre-commit': 'lint-staged',
-  },
-};
+'use strict';
+
+module.exports = { hooks: { 'pre-commit': 'lint-staged' } };
