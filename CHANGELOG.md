@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.5
+
+- Add `as`, `in`, `k`, `v` to allowed identifiers list
+- Bump `lint-staged`, `prettier` versions
+
 ## 1.1.4
 
 - Add `_` and `t` to allowed identifiers list
