@@ -75,7 +75,7 @@
     console.log(foo, bar); // => 1, 9
     ```
 
-  - Symbols and BigInts cannot be faithfully polyfilled, so they should not be used when targeting browsers/environments that don’t support them natively.
+  - Symbols and BigInts cannot be faithfully polyfilled, so they should not be used when targeting browsers/environments that don't support them natively.
 
 <a name="types--complex"></a>
 
@@ -102,7 +102,7 @@
 
 - [2.1](#references--prefer-const) Use `const` for references; avoid using `var`. eslint: [`prefer-const`](https://eslint.org/docs/rules/prefer-const.html), [`no-const-assign`](https://eslint.org/docs/rules/no-const-assign.html)
 
-  > Why? This ensures that you can’t reassign your references, which can lead to bugs and difficult to comprehend code.
+  > Why? This ensures that you can't reassign your references, which can lead to bugs and difficult to comprehend code.
 
   ```javascript
   // bad
@@ -387,7 +387,7 @@
 
 <a name="arrays--callback-return"></a>
 
-- [4.7](#arrays--callback-return) Use return statements in array method callbacks. It’s ok to omit the return if the function body consists of a single statement returning an expression without side effects, following [8.2](#arrows--implicit-return). eslint: [`array-callback-return`](https://eslint.org/docs/rules/array-callback-return)
+- [4.7](#arrays--callback-return) Use return statements in array method callbacks. It's ok to omit the return if the function body consists of a single statement returning an expression without side effects, following [8.2](#arrows--implicit-return). eslint: [`array-callback-return`](https://eslint.org/docs/rules/array-callback-return)
 
   ```javascript
   // good
@@ -619,7 +619,7 @@
   ```javascript
   // really bad
   function handleThings(opts) {
-    // No! We shouldn’t mutate function arguments.
+    // No! We shouldn't mutate function arguments.
     // Double bad: if opts is falsy it'll be set to an object which may
     // be what you want but it can introduce subtle bugs.
     opts = opts || {};
@@ -735,7 +735,7 @@
 
 - [7.10](#functions--prefer-spread) Prefer the use of the spread operator `...` to call variadic functions. eslint: [`prefer-spread`](https://eslint.org/docs/rules/prefer-spread)
 
-  > Why? It’s cleaner, you don’t need to supply a context, and you can not easily compose `new` with `apply`.
+  > Why? It's cleaner, you don't need to supply a context, and you can not easily compose `new` with `apply`.
 
   ```javascript
   // bad
@@ -840,7 +840,7 @@
   // good
   [1, 2, 3].map(
     (number) =>
-      `A long string with the ${number}. It’s so long that we don’t want it to take up space on the .map line!`
+      `A long string with the ${number}. It's so long that we don't want it to take up space on the .map line!`
   );
 
   // good
@@ -998,7 +998,7 @@
 
 <a name="constructors--to-string"></a>
 
-- [10.4](#constructors--to-string) It’s okay to write a custom `toString()` method, just make sure it works successfully and causes no side effects.
+- [10.4](#constructors--to-string) It's okay to write a custom `toString()` method, just make sure it works successfully and causes no side effects.
 
   ```javascript
   class Jedi {
@@ -1120,7 +1120,7 @@
 
 - [11.1](#modules--use-them) Always use modules (`import`/`export`) over a non-standard module system. You can always transpile to your preferred module system.
 
-  > Why? Modules are the future, let’s start using the future now.
+  > Why? Modules are the future, let's start using the future now.
 
   ```javascript
   // bad
@@ -1285,7 +1285,7 @@
 
 <a name="iterators--avoid"></a>
 
-- [12.1](#iterators--avoid) Don’t use iterators. Prefer JavaScript’s higher-order functions instead of loops like `for-in` or `for-of`, with the exception of `reduce`.
+- [12.1](#iterators--avoid) Don't use iterators. Prefer JavaScript's higher-order functions instead of loops like `for-in` or `for-of`, with the exception of `reduce`.
 
   > Why? This enforces our immutable rule. Dealing with pure functions that return values is easier to reason about than side effects.
   > Use `map` / `every` / `filter` / `find` / `findIndex` / `some` / ... to iterate over arrays, and `Object.keys` / `Object.values` / `Object.entries` to produce arrays so you can iterate over objects.
@@ -1391,7 +1391,7 @@
 
 - [14.2](#variables--one-var) Use one `const` or `let` declaration per variable or assignment. eslint: [`one-var`](https://eslint.org/docs/rules/one-var.html)
 
-  > Why? It’s easier to add new variable declarations this way, and you never have to worry about swapping out a `;` for a `,` or introducing punctuation-only diffs. You can also step through each declaration with the debugger, instead of jumping through all of them at once.
+  > Why? It's easier to add new variable declarations this way, and you never have to worry about swapping out a `;` for a `,` or introducing punctuation-only diffs. You can also step through each declaration with the debugger, instead of jumping through all of them at once.
 
   ```javascript
   // bad
@@ -1449,7 +1449,7 @@
 
 <a name="variables--no-chain-assignment"></a>
 
-- [14.4](#variables--no-chain-assignment) Don’t chain variable assignments. eslint: [`no-multi-assign`](https://eslint.org/docs/rules/no-multi-assign)
+- [14.4](#variables--no-chain-assignment) Don't chain variable assignments. eslint: [`no-multi-assign`](https://eslint.org/docs/rules/no-multi-assign)
 
   > Why? Chaining variable assignments creates implicit global variables.
 
@@ -1673,7 +1673,7 @@
 - [15.5](#comparison--no-mixed-operators) When mixing operators, enclose them in parentheses. The only exception is the standard arithmetic operators: `+`, `-`, and `**` since their precedence is broadly understood. We recommend enclosing `/` and `*` in parentheses because their precedence can be ambiguous when they are mixed.
   eslint: [`no-mixed-operators`](https://eslint.org/docs/rules/no-mixed-operators.html)
 
-  > Why? This improves readability and clarifies the developer’s intention.
+  > Why? This improves readability and clarifies the developer's intention.
 
   ```javascript
   // good
@@ -1911,7 +1911,7 @@
 
 <a name="comments--singleline"></a>
 
-- [18.2](#comments--singleline) Use `//` for single line comments. Place single line comments on a newline above the subject of the comment. Put an empty line before the comment unless it’s on the first line of a block.
+- [18.2](#comments--singleline) Use `//` for single line comments. Place single line comments on a newline above the subject of the comment. Put an empty line before the comment unless it's on the first line of a block.
 
   ```javascript
   // bad
@@ -1987,7 +1987,7 @@
 
 <a name="comments--action-items"></a>
 
-- [18.4](#comments--action-items) Prefixing your comments with `FIXME` or `TODO` helps other developers quickly understand if you’re pointing out a problem that needs to be revisited, or if you’re suggesting a solution to the problem that needs to be implemented. These are different than regular comments because they are actionable. Be sure to include your name, so that the original author is easy to identify. The actions are `FIXME: (John) -- need to figure this out` or `TODO: (Hanako) -- need to implement`.
+- [18.4](#comments--action-items) Prefixing your comments with `FIXME` or `TODO` helps other developers quickly understand if you're pointing out a problem that needs to be revisited, or if you're suggesting a solution to the problem that needs to be implemented. These are different than regular comments because they are actionable. Be sure to include your name, so that the original author is easy to identify. The actions are `FIXME: (John) -- need to figure this out` or `TODO: (Hanako) -- need to implement`.
 
 <a name="comments--fixme"></a>
 
@@ -1998,7 +1998,7 @@
     constructor() {
       super();
 
-      // FIXME: (name) shouldn’t use a global here
+      // FIXME: (name) shouldn't use a global here
       total = 0;
     }
   }
@@ -2096,7 +2096,7 @@
 
 - [20.1](#commas--trailing) Additional trailing comma: **Yup.** prettier: [`trailing-commas`](https://prettier.io/docs/en/options.html#trailing-commas)
 
-  > Why? This leads to cleaner git diffs. Also, transpilers like Babel will remove the additional trailing comma in the transpiled code which means you don’t have to worry about the [trailing comma problem](https://github.com/airbnb/javascript/blob/es5-deprecated/es5/README.md#commas) in legacy browsers.
+  > Why? This leads to cleaner git diffs. Also, transpilers like Babel will remove the additional trailing comma in the transpiled code which means you don't have to worry about the [trailing comma problem](https://github.com/airbnb/javascript/blob/es5-deprecated/es5/README.md#commas) in legacy browsers.
 
   ```diff
   // bad - git diff without trailing comma
@@ -2142,7 +2142,7 @@
   });
 
   // good
-  const reaction = 'No! That’s impossible!';
+  const reaction = 'No! That's impossible!';
   (async function meanwhileOnTheFalcon() {
     // handle `leia`, `lando`, `chewie`, `r2`, `c3p0`
     // ...
@@ -2174,7 +2174,7 @@
   const totalScore = this.reviewScore + ''; // invokes this.reviewScore.valueOf()
 
   // bad
-  const totalScore = this.reviewScore.toString(); // isn’t guaranteed to return a string
+  const totalScore = this.reviewScore.toString(); // isn't guaranteed to return a string
 
   // good
   const totalScore = String(this.reviewScore);
@@ -2218,7 +2218,7 @@
 
 <a name="coercion--comment-exceptions"></a>
 
-- [22.3](#coercion--comment-exceptions) If for whatever reason you are doing something wild and `Number.parseInt` is your bottleneck and need to use bitwise operators for [performance reasons](https://jsperf.com/coercion-vs-casting/3), leave a comment explaining why and what you’re doing.
+- [22.3](#coercion--comment-exceptions) If for whatever reason you are doing something wild and `Number.parseInt` is your bottleneck and need to use bitwise operators for [performance reasons](https://jsperf.com/coercion-vs-casting/3), leave a comment explaining why and what you're doing.
 
   ```javascript
   // good
@@ -2336,7 +2336,7 @@
 
 - [23.4](#naming--no-underscore-dangle) Do not use trailing or leading underscores, except for `_id`. eslint: [`no-underscore-dangle`](https://eslint.org/docs/rules/no-underscore-dangle.html)
 
-  > Why? JavaScript does not have the concept of privacy in terms of properties or methods. Although a leading underscore is a common convention to mean “private”, in fact, these properties are fully public, and as such, are part of your public API contract. This convention might lead developers to wrongly think that a change won’t count as breaking, or that tests aren’t needed. tl;dr: if you want something to be “private”, it must not be observably present.
+  > Why? JavaScript does not have the concept of privacy in terms of properties or methods. Although a leading underscore is a common convention to mean “private”, in fact, these properties are fully public, and as such, are part of your public API contract. This convention might lead developers to wrongly think that a change won't count as breaking, or that tests aren't needed. tl;dr: if you want something to be “private”, it must not be observably present.
 
   ```javascript
   // bad
@@ -2355,7 +2355,7 @@
 
 <a name="naming--self-this"></a>
 
-- [23.5](#naming--self-this) Don’t save references to `this`. Use arrow functions or [Function#bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind).
+- [23.5](#naming--self-this) Don't save references to `this`. Use arrow functions or [Function#bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind).
 
   ```javascript
   // bad
@@ -2423,7 +2423,7 @@
 
 <a name="naming--camelCase-default-export"></a>
 
-- [23.7](#naming--camelCase-default-export) Use camelCase when you export-default a function. Your filename should be identical to your function’s name.
+- [23.7](#naming--camelCase-default-export) Use camelCase when you export-default a function. Your filename should be identical to your function's name.
 
   ```javascript
   function makeStyleGuide() {
@@ -2520,7 +2520,7 @@
 
 <a name="accessors--consistent"></a>
 
-- [24.2](#accessors--consistent) It’s okay to create `get()` and `set()` functions, but be consistent.
+- [24.2](#accessors--consistent) It's okay to create `get()` and `set()` functions, but be consistent.
 
   ```javascript
   class Jedi {
@@ -2647,12 +2647,26 @@ contains utilities that are functionally broken but remain for legacy reasons.
 <a name="testing"></a>
 
 - [27.1](#testing)
+
   - Whichever testing framework you use, you should be writing tests!
   - Strive to write many small pure functions, and minimize where mutations occur.
-  - Be cautious about stubs and mocks - they can make your tests more brittle.
-  - We primarily use [`mocha`](https://www.npmjs.com/package/mocha), [`jest`](https://www.npmjs.com/package/jest), and [`cypress](https://www.npmjs.com/package/cypress) at Zehitomo.
-  - 100% test coverage is a good goal to strive for, even if it’s not always practical to reach it.
+  - We primarily use [`mocha`](https://www.npmjs.com/package/mocha), [`jest`](https://www.npmjs.com/package/jest), and [`cypress`](https://www.npmjs.com/package/cypress) at Zehitomo.
+  - 100% test coverage is a good goal to strive for, even if it's not always practical to reach it.
   - Whenever you fix a bug, _write a regression test_. A bug fixed without a regression test is almost certainly going to break again in the future.
+
+- [27.2](#testing--whitespace) When writing a test, denote the setup, execution, and validation phases with whitespace. There should only be two empty lines in a typical test.
+
+  ```javascript
+  afterEach(() => User.remove({}));
+
+  it("should return the user's favourite food", async () => {
+    await User.insertOne({ _id: 'user-1', favouriteFood: 'pizza' }); // set up
+
+    const actual = await getFavouriteFood('user-1'); // execute
+
+    expect(actual).to.equal('pizza'); // validate
+  });
+  ```
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -2681,13 +2695,6 @@ contains utilities that are functionally broken but remain for legacy reasons.
 ### Read This
 
 - [Standard ECMA-262](http://www.ecma-international.org/ecma-262/6.0/index.html)
-
-### Tools
-
-- Code Style Linters
-  - [ESlint](https://eslint.org/) - [Airbnb Style .eslintrc](https://github.com/airbnb/javascript/blob/master/linters/.eslintrc)
-  - [JSHint](http://jshint.com/) - [Airbnb Style .jshintrc](https://github.com/airbnb/javascript/blob/master/linters/.jshintrc)
-- Neutrino Preset - [@neutrinojs/airbnb](https://neutrinojs.org/packages/airbnb/)
 
 ### Other Style Guides
 
@@ -2729,7 +2736,7 @@ contains utilities that are functionally broken but remain for legacy reasons.
 - [Third Party JavaScript](https://www.manning.com/books/third-party-javascript) - Ben Vinegar and Anton Kovalyov
 - [Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript](http://amzn.com/0321812182) - David Herman
 - [Eloquent JavaScript](http://eloquentjavascript.net/) - Marijn Haverbeke
-- [You Don’t Know JS: ES6 & Beyond](http://shop.oreilly.com/product/0636920033769.do) - Kyle Simpson
+- [You Don't Know JS: ES6 & Beyond](http://shop.oreilly.com/product/0636920033769.do) - Kyle Simpson
 
 ### Blogs
 
