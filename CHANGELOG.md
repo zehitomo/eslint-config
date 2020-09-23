@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.6
+
+- Add `fs` and `rp` to allowed identifiers list
+
 ## 1.1.5
 
 - Add `as`, `in`, `k`, `v` to allowed identifiers list

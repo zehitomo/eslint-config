@@ -10,7 +10,10 @@ module.exports = {
     'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
     'id-length': [
       'error',
-      { exceptions: ['_', 'as', 'en', 'i', 'in', 'k', 'id', 'ja', 'n', 'v', 't'], min: 3 },
+      {
+        exceptions: ['_', 'as', 'en', 'fs', 'i', 'in', 'k', 'id', 'ja', 'n', 'rp', 'v', 't'],
+        min: 3,
+      },
     ],
     'new-cap': 'warn',
     'no-array-constructor': 'error',
