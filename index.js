@@ -11,7 +11,7 @@ module.exports = {
     'id-length': [
       'error',
       {
-        exceptions: ['_', 'as', 'en', 'fs', 'i', 'in', 'k', 'id', 'ja', 'n', 'rp', 'v', 't'],
+        exceptions: ['_', 'as', 'en', 'fs', 'i', 'in', 'k', 'id', 'ja', 'n', 'qs', 'rp', 'v', 't'],
         min: 3,
       },
     ],

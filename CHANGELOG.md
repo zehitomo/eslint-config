@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.7
+
+- Add `qs` to allowed identifiers list
+
 ## 1.1.6
 
 - Add `fs` and `rp` to allowed identifiers list
