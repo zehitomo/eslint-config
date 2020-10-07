@@ -35,7 +35,7 @@ module.exports = {
     'no-new-object': 'error',
     'no-new-wrappers': 'error',
     'no-param-reassign': 'error',
-    'no-plusplus': 'error',
+    'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     'no-restricted-globals': [
       'error',
       { message: 'Use Number.isFinite instead.', name: 'isFinite' },

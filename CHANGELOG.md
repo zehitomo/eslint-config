@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.8
+
+- Allow ++ to be used in the final-expression of a for loop
+
 ## 1.1.7
 
 - Add `qs` to allowed identifiers list
