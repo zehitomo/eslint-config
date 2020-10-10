@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.0
+
+- Bump `eslint` version to `7.11.0`
+- Add `EN`, `JA`, `to` to allowed identifiers list
+
 ## 1.1.8
 
 - Allow ++ to be used in the final-expression of a for loop
