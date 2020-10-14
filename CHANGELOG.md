@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1
+
+- Add `on` to allowed identifiers list
+
 ## 1.2.0
 
 - Bump `eslint` version to `7.11.0`

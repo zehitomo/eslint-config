@@ -24,6 +24,7 @@ module.exports = {
           'JA',
           'k',
           'n',
+          'on',
           'qs',
           'rp',
           't',
