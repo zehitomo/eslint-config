@@ -47,7 +47,15 @@ module.exports = {
       'error',
       { enforceConst: true, ignore: [-1, 0, 1, 2], ignoreDefaultValues: true },
     ],
-    'no-mixed-operators': 'error',
+    'no-mixed-operators': [
+      'error',
+      {
+        groups: [
+          ['&', '|', '^', '~', '<<', '>>', '>>>'],
+          ['&&', '||'],
+        ],
+      },
+    ],
     'no-multi-assign': 'error',
     'no-negated-condition': 'error',
     'no-nested-ternary': 'error',
