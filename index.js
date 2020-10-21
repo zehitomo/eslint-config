@@ -29,6 +29,7 @@ module.exports = {
           'rp',
           't',
           'to',
+          'TZ',
           'v',
         ],
         min: 3,
