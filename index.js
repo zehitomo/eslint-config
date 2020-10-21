@@ -83,7 +83,11 @@ module.exports = {
       { message: 'Use / operator instead.', object: '_', property: 'divide' },
       { message: 'Use a regular loop instead.', object: '_', property: 'each' },
       { message: 'Use String.endsWith instead.', object: '_', property: 'endsWith' },
-      { message: 'Use Object.entries instead.', object: '_', property: 'entries' },
+      {
+        message: 'Use Object.entries instead. Take care not to pass undefined.',
+        object: '_',
+        property: 'entries',
+      },
       {
         message: 'Use Array.every, or disable this rule to iterate object.',
         object: '_',
@@ -131,7 +135,11 @@ module.exports = {
       { message: 'Use typeof instead.', object: '_', property: 'isString' },
       { message: 'Use typeof instead.', object: '_', property: 'isUndefined' },
       { message: 'Use Array.join instead.', object: '_', property: 'join' },
-      { message: 'Use Object.keys instead.', object: '_', property: 'keys' },
+      {
+        message: 'Use Object.keys instead. Take care not to pass undefined.',
+        object: '_',
+        property: 'keys',
+      },
       {
         message: 'Use Array.map, or disable this rule to iterate object.',
         object: '_',
@@ -160,7 +168,11 @@ module.exports = {
       { message: 'Use String.trim instead.', object: '_', property: 'trim' },
       { message: 'Use String.trimEnd instead.', object: '_', property: 'trimEnd' },
       { message: 'Use String.trimStart instead.', object: '_', property: 'trimStart' },
-      { message: 'Use Object.values instead.', object: '_', property: 'values' },
+      {
+        message: 'Use Object.values instead. Take care not to pass undefined.',
+        object: '_',
+        property: 'values',
+      },
       { object: 'describe', property: 'only' },
       { object: 'it', property: 'only' },
     ],
