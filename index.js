@@ -45,7 +45,7 @@ module.exports = {
     'no-loop-func': 'error',
     'no-magic-numbers': [
       'error',
-      { enforceConst: true, ignore: [-1, 0, 1], ignoreDefaultValues: true },
+      { enforceConst: true, ignore: [-1, 0, 1, 2], ignoreDefaultValues: true },
     ],
     'no-mixed-operators': 'error',
     'no-multi-assign': 'error',
