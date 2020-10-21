@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.2
+
+- Bump `husky` version to `10.4.2`
+- Add `2` to ignored magic numbers list
+- Add `TZ` to allowed identifiers list
+- Allow arithmetic operators to be mixed
+- Add better warning message for restricted `_.values`, `_.keys`, `_.entries`
+
 ## 1.2.1
 
 - Add `on` to allowed identifiers list
