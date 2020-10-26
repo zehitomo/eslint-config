@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.0
+
+- Bump `eslint` version to `7.12.0`
+
 ## 1.2.2
 
 - Bump `husky` version to `10.4.2`
