@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4.0
+
+- Bump `eslint` version to `7.12.1`
+- Bump `lint-staged` version to `10.5.0`
+
 ## 1.3.0
 
 - Bump `eslint` version to `7.12.0`
