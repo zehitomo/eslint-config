@@ -2,6 +2,6 @@
 
 module.exports = {
   env: { node: true },
-  parserOptions: { ecmaVersion: '2019' },
+  parserOptions: { ecmaVersion: '2020' },
   ...require('./index'),
 };
