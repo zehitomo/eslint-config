@@ -14,6 +14,7 @@ module.exports = {
         exceptions: [
           '_',
           'as',
+          'db',
           'en',
           'EN',
           'fs',
