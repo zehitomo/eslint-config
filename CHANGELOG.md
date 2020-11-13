@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.1
+
+- Add `db` to allowed identifiers list
+
 ## 1.5.0
 
 - Bump `eslint` version to `7.13.0`
