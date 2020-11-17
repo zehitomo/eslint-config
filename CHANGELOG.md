@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.2
+
+- Add `vm` to allowed identifiers list
+
 ## 1.5.1
 
 - Add `db` to allowed identifiers list
