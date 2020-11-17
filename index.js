@@ -32,6 +32,7 @@ module.exports = {
           'to',
           'TZ',
           'v',
+          'vm',
         ],
         min: 3,
       },
