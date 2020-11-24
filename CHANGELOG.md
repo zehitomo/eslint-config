@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.6.1
+
+- Bump `eslint` version to `7.14.0`
+- Bump `lint-staged` version to `10.5.2`
+- Bump `prettier` to `2.2.0`
+
 ## 1.5.2
 
 - Add `vm` to allowed identifiers list
