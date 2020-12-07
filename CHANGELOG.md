@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.7.0
+
+- Bump `eslint` version to `7.15.0`
+- Upgrade `eslint-config-prettier` to `7.0.0`
+- Bump `lint-staged` version to `10.5.3`
+- Bump `prettier` to `2.2.1`
+
 ## 1.6.1
 
 - Bump `eslint` version to `7.14.0`
