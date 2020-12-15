@@ -24,13 +24,13 @@
   },
   "peerDependencies": {
     "eslint": "7.15.0",
-    "husky": "4.3.0",
+    "husky": "4.3.6",
     "lint-staged": "10.5.3",
     "prettier": "2.2.1"
   },
   "devDependencies": {
     "eslint": "7.15.0",
-    "husky": "4.3.0",
+    "husky": "4.3.6",
     "lint-staged": "10.5.3",
     "prettier": "2.2.1"
   }
