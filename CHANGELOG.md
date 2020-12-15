@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.7.1
+
+- Add `$q` to allowed identifiers list
+- Bump `husky` to `4.3.6`
+
 ## 1.7.0
 
 - Bump `eslint` version to `7.15.0`
