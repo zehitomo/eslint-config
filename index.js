@@ -13,6 +13,7 @@ module.exports = {
       {
         exceptions: [
           '_',
+          '$q',
           'as',
           'db',
           'en',
