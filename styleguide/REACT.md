@@ -370,6 +370,63 @@
   }
   ```
 
+- Props should be defined with an interface called `Props` and exported as component name followed by the Props keyword.
+
+  ```tsx
+  // bad
+  export interface Props {
+    // stuff goes here
+  }
+
+  const Button: FC<Props> = ({ onClick }) => {
+    // stuff goes here
+  };
+
+  export default Button;
+
+  // good
+  interface Props {
+    // stuff goes here
+  }
+
+  const Button: FC<Props> = ({ onClick }) => {
+    // stuff goes here
+  };
+
+  export default Button;
+  export type { Props as ButtonProps };
+  ```
+
+- If the component uses props from a HOC (e.g. `react-i18next`), a new type should be declared. This way the original props can be exported without the HOC props.
+
+  ```tsx
+  // bad
+  export interface Props extends WithTranslation {
+    // stuff goes here
+  }
+
+  const Button: FC<Props> = ({ t }) => {
+    // stuff goes here
+  };
+
+  export default Button;
+  export type { Props as ButtonProps };
+
+  // good
+  interface Props {
+    // stuff goes here
+  }
+
+  type PropsWithHoc = Props & WithTranslation;
+
+  const Button: FC<PropsWithHoc> = ({ t }) => {
+    // stuff goes here
+  };
+
+  export default Button;
+  export type { Props as ButtonProps };
+  ```
+
 ## Refs
 
 - Always use ref callbacks. eslint: [`react/no-string-refs`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md)
