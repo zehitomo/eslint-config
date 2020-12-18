@@ -427,6 +427,24 @@
   export type { Props as ButtonProps };
   ```
 
+- Props which accept a function that will be called in case of an event should start with `on` followed by the event name.
+
+  ```tsx
+  // bad
+  interface Props {
+    handleDelete: () => undefined;
+    selectItem: () => undefined;
+    submit: () => undefined;
+  }
+
+  // good
+  interface Props {
+    onDelete: () => undefined;
+    onSelect: () => undefined;
+    onSubmit: () => undefined;
+  }
+  ```
+
 ## Refs
 
 - Always use ref callbacks. eslint: [`react/no-string-refs`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md)
