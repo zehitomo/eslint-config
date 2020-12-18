@@ -427,22 +427,20 @@
   export type { Props as ButtonProps };
   ```
 
-- Event handler props should start with `handle` or `on` followed by the event name.
+- Event handler props should use `on`, while component methods used as event handlers should use `handle` as prefix followed by the event name. eslint: [`react/jsx-handler-names`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-handler-names.md)
 
   ```tsx
   // bad
-  interface Props {
-    deleteItem: () => undefined;
-    selectItem: () => undefined;
-    submit: () => undefined;
-  }
+  <MyComponent handleChange={this.handleChange} />
+
+  // bad
+  <MyComponent onChange={this.componentChanged} />
 
   // good
-  interface Props {
-    handleDelete: () => undefined;
-    onSelect: () => undefined;
-    handleSubmit: () => undefined;
-  }
+  <MyComponent onChange={this.handleChange} />
+
+  // good
+  <MyComponent onChange={this.props.onFoo} />
   ```
 
 ## Refs
