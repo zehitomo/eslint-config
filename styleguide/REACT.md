@@ -427,21 +427,21 @@
   export type { Props as ButtonProps };
   ```
 
-- Props which accept a function that will be called in case of an event should start with `on` followed by the event name.
+- Event handler props should start with `handle` or `on` followed by the event name.
 
   ```tsx
   // bad
   interface Props {
-    handleDelete: () => undefined;
+    deleteItem: () => undefined;
     selectItem: () => undefined;
     submit: () => undefined;
   }
 
   // good
   interface Props {
-    onDelete: () => undefined;
+    handleDelete: () => undefined;
     onSelect: () => undefined;
-    onSubmit: () => undefined;
+    handleSubmit: () => undefined;
   }
   ```
 
