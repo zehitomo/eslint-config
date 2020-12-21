@@ -1,9 +1,9 @@
 'use strict';
 
 module.exports = {
-  'react/jsx-boolean-value': ['error', 'always', { never: ['jsx'] }],
+  'react/jsx-boolean-value': ['error', 'always', { never: ['global', 'jsx'] }],
   'react/jsx-uses-react': 'off',
-  'react/prop-types': 'off',
+  'react/no-unused-prop-types': 'error',
   'react/react-in-jsx-scope': 'off',
-  'react/self-closing-comp': 'error',
+  'react/static-property-placement': ['error', 'static public field'],
 };
