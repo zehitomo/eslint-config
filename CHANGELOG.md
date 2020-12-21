@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.8.2
+
+- Add shared rules from `z-web`
+
 ## 1.8.1
 
 - Bump `eslint` version to `7.16.0`
