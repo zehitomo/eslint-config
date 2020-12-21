@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.9.0
+
+- Add `typescript-eslint` rules
+
 ## 1.8.2
 
 - Add shared rules from `z-web`
