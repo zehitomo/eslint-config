@@ -1,6 +1,11 @@
 # Changelog
 
-## 1.8
+## 1.8.1
+
+- Bump `eslint` version to `7.16.0`
+- Bump `eslint-config-prettier` to `7.1.0`
+
+## 1.8.0
 
 - Add `eslint-plugin-react` rules
 
