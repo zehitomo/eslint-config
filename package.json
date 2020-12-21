@@ -1,6 +1,6 @@
 {
   "name": "@zehitomo/eslint-config",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "description": "ESLint shareable config for Zehitomo",
   "main": "index.js",
   "author": "Zehitomo",

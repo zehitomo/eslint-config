@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.8
+
+- Add `eslint-plugin-react` rules
+
 ## 1.7.1
 
 - Add `$q` to allowed identifiers list
