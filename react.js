@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = {
+  'react/destructuring-assignment': 'error',
   'react/jsx-boolean-value': ['error', 'always', { never: ['global', 'jsx'] }],
   'react/jsx-no-bind': 'error',
   'react/jsx-pascal-case': 'error',

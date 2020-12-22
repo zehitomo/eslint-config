@@ -49,7 +49,9 @@
   // bad
   class Listing extends React.Component {
     render() {
-      return <div>{this.props.hello}</div>;
+      const { hello } = this.props;
+
+      return <div>{hello}</div>;
     }
   }
 
@@ -169,6 +171,44 @@
     phoneNumber={12345678}
     Component={SomeComponent}
   />
+  ```
+
+- Use object destructuring when accessing and using state or props. eslint: [`react/destructuring-assignment`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/destructuring-assignment.md)
+
+  > Why? Destructuring saves you from repetitive access of an object. Repeating object access creates more repetitive code, requires more reading, and creates more opportunities for mistakes. Destructuring also provides a single site of definition of the object structure that is used in the block, rather than requiring reading the entire block to determine what is used.
+
+  ```tsx
+  // bad
+  const MyComponent = (props) => {
+    return <div id={props.id} />;
+  };
+
+  // bad
+  class Foo extends Component {
+    render() {
+      return <div>{this.context.foo}</div>;
+    }
+  }
+
+  // good
+  const MyComponent = ({ id }) => <div id={id} />;
+
+  // good
+  const MyComponent = (props, context) => {
+    const { id } = props;
+
+    return <div id={id} />;
+  };
+
+  // good
+  class Foo extends Component {
+    render() {
+      const { id } = this.props;
+      const { title } = this.context;
+
+      return <div id={id}>{title}</div>;
+    }
+  }
   ```
 
 - Show the value of the prop when it is explicitly `true`. eslint: [`react/jsx-boolean-value`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md)
@@ -444,9 +484,9 @@
 - Use arrow functions to close over local variables. It is handy when you need to pass additional data to an event handler. Although, make sure they [do not massively hurt performance](https://www.bignerdranch.com/blog/choosing-the-best-approach-for-react-event-handlers/), in particular when passed to custom components that might be PureComponents, because they will trigger a possibly needless rerender every time.
 
   ```tsx
-  const ItemList = (props) => (
+  const ItemList = ({ items }) => (
     <ul>
-      {props.items.map((item, index) => (
+      {items.map((item, index) => (
         <Item
           key={item.key}
           onClick={(event) => {
