@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.10.0
+
+- Add rules referenced in REACT styleguide to React ruleset
+
 ## 1.9.0
 
 - Add `typescript-eslint` rules
