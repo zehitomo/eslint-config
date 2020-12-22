@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.11.0
+
+- Configure `react/destructuring-assignment` rule
+
 ## 1.10.0
 
 - Add rules referenced in REACT styleguide to React ruleset
