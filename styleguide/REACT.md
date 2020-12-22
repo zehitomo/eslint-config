@@ -467,6 +467,24 @@
   export type { Props as ButtonProps };
   ```
 
+- Event handler props should use `on` as prefix followed by the event name.
+
+  > Why? Using a pattern for event handler prop names makes it easier to know the role of the prop. This way pattern matching can be used in Storybook to automatically catch [actions](https://storybook.js.org/docs/react/essentials/actions).
+
+  ```tsx
+  // bad
+  <MyComponent handleChange={this.handleChange} />
+
+  // bad
+  <MyComponent submit={this.handleSubmit} />
+
+  // good
+  <MyComponent onChange={this.handleChange} />
+
+  // good
+  <MyComponent onSubmit={this.handleSubmit} />
+  ```
+
 ## Refs
 
 - Always use ref callbacks. eslint: [`react/no-string-refs`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md)
