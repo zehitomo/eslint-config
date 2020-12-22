@@ -427,20 +427,22 @@
   export type { Props as ButtonProps };
   ```
 
-- Event handler props should use `on`, while component methods used as event handlers should use `handle` as prefix followed by the event name. eslint: [`react/jsx-handler-names`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-handler-names.md)
+- Event handler props should use `on` as prefix followed by the event name.
+
+  > Why? Using a pattern for event handler prop names makes it easier to know the role of the prop. This way pattern matching can be used in Storybook to automatically catch [actions](https://storybook.js.org/docs/react/essentials/actions).
 
   ```tsx
   // bad
   <MyComponent handleChange={this.handleChange} />
 
   // bad
-  <MyComponent onChange={this.componentChanged} />
+  <MyComponent submit={this.handleSubmit} />
 
   // good
   <MyComponent onChange={this.handleChange} />
 
   // good
-  <MyComponent onChange={this.props.onFoo} />
+  <MyComponent onSubmit={this.handleSubmit} />
   ```
 
 ## Refs
