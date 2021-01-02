@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.12.0
+
+- Bump `eslint` version to `7.17.0`
+
 ## 1.11.0
 
 - Configure `react/destructuring-assignment` rule
