@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.13.0
+
+- Add `typescript-sort-keys` file and rules
+
 ## 1.12.0
 
 - Bump `eslint` version to `7.17.0`
