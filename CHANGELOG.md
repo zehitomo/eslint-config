@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.0
+
+- Replace `no-shadow` with `@typescript-eslint/no-shadow` in TypeScript files.
+
 ## 2.0.0
 
 - **Breaking change**: Non-root configs (`react`, `typescript-eslint`, `typescript-sort-keys`) now export an eslint config object instead of an object with rules. This way these can be used in an eslint config's `extends`.
