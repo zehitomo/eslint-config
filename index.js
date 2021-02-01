@@ -83,6 +83,11 @@ module.exports = {
       { message: 'Use Object.assign instead.', object: '_', property: 'assign' },
       { message: 'Use Math.ceil instead.', object: '_', property: 'ceil' },
       { message: 'Use the spread operator ... instead.', object: '_', property: 'clone' },
+      {
+        message: 'Use Array.concat or the spread operator ... instead.',
+        object: '_',
+        property: 'concat',
+      },
       { message: 'Use / operator instead.', object: '_', property: 'divide' },
       { message: 'Use a regular loop instead.', object: '_', property: 'each' },
       { message: 'Use String.endsWith instead.', object: '_', property: 'endsWith' },
