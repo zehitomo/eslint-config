@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.2.0
+
+- Add `_.concat` to restricted methods
+- Bump `eslint` version to `7.19.0`
+- Bump `eslint-config-prettier` to `7.2.0`
+- Bump `husky` to `4.3.8`
+
 ## 2.1.0
 
 - Replace `no-shadow` with `@typescript-eslint/no-shadow` in TypeScript files.

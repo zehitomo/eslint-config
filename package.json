@@ -1,6 +1,6 @@
 {
   "name": "@zehitomo/eslint-config",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "ESLint shareable config for Zehitomo",
   "main": "index.js",
   "author": "Zehitomo",
@@ -8,6 +8,10 @@
     {
       "email": "alex@zehitomo.com",
       "name": "Alexander Ogilvie"
+    },
+    {
+      "email": "david@zehitomo.com",
+      "name": "Dávid Richolm"
     }
   ],
   "repository": {
