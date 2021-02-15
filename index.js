@@ -21,6 +21,7 @@ module.exports = {
           'fs',
           'i',
           'id',
+          'if',
           'in',
           'ja',
           'JA',
