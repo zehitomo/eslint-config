@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.3.0
+
+- Add `if` to allowed identifiers list
+- Bump `eslint` version to `7.20.0`
+- Bump `lint-staged` to `10.5.4`
+
 ## 2.2.0
 
 - Add `_.concat` to restricted methods
