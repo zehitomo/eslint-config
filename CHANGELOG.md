@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.0.3
+
+- Add `stylelint` to peerDependencies.
+- Add `stylelint-config-prettier` and `stylelint-config-sass-guidelines` to dependencies.
+- Add `stylelint.config.js`.
+- Bump `eslint-config-prettier` to `8.0.2`.
+
 ## 2.3.0
 
 - Add `if` to allowed identifiers list
