@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.1.0
+
+- Bump `eslint` version to `7.22.0`
+- Bump `stylelint` version to `13.12.0`
+
 ## 3.0.3
 
 - Add `stylelint` to peerDependencies.
