@@ -182,8 +182,6 @@ module.exports = {
         object: '_',
         property: 'values',
       },
-      { object: 'describe', property: 'only' },
-      { object: 'it', property: 'only' },
     ],
     'no-return-assign': 'error',
     'no-return-await': 'error',
