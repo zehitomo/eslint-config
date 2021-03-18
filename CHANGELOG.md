@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.2.0
+
+- Remove `.only` from restricted globals
+
 ## 3.1.0
 
 - Bump `eslint` version to `7.22.0`
