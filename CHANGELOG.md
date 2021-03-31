@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.0.0
+
+- Upgrade `husky` version to `6.0.0`
+- Bump `eslint` version to `7.23.0`
+- **Breaking change**: `husky.config.js` must be replaced with `.husky` folder. See: <https://typicode.github.io/husky/#/?id=migrate-from-v4-to-v6>
+
 ## 3.2.0
 
 - Remove `.only` from restricted globals
