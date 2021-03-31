@@ -43,6 +43,6 @@
     "prettier": "2.2.1"
   },
   "scripts": {
-    "postinstall": "cross-env-shell cd $INIT_CWD && npx husky install"
+    "postinstall": "cross-env-shell \"cd $INIT_CWD && npx husky install\""
   }
 }
