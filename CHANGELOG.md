@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.2
+
+- Wrap `postinstall` `cross-env-shell` command in quotes
+
 ## 4.0.1
 
 - Set up husky git hooks with `postinstall` instead of `prepare`
