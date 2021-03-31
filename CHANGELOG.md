@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.1
+
+- Set up husky git hooks with `postinstall` instead of `prepare`
+
 ## 4.0.0
 
 - Upgrade `husky` version to `6.0.0`
