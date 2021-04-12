@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.1.0
+
+- Bump `eslint` version to `7.24.0`
+
 ## 4.0.2
 
 - Wrap `postinstall` `cross-env-shell` command in quotes
