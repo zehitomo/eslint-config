@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.2.0
+
+- Bump `eslint` version to `7.25.0`
+- Bump `eslint-config-prettier` version to `8.2.0`
+
 ## 4.1.0
 
 - Bump `eslint` version to `7.24.0`
