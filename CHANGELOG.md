@@ -1,5 +1,12 @@
 # Changelog
 
+## 4.3.0
+
+- Bump `eslint` version to `7.26.0`
+- Bump `eslint-config-prettier` version to `8.3.0`
+- Upgrade `lint-staged` version to `11.0.0`
+- Bump `stylelint` version to `13.12.0`
+
 ## 4.2.0
 
 - Bump `eslint` version to `7.25.0`
