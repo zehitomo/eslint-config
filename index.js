@@ -168,6 +168,7 @@ module.exports = {
       { message: 'Use String.startsWith instead.', object: '_', property: 'startsWith' },
       { message: 'Use - operator instead.', object: '_', property: 'subtract' },
       { message: 'Use Array.slice instead.', object: '_', property: 'take' },
+      { message: 'Use Array.slice instead.', object: '_', property: 'takeRight' },
       { message: 'Use a template literal instead.', object: '_', property: 'template' },
       { message: 'Use String.toLowerCase instead.', object: '_', property: 'toLower' },
       { message: 'Use Object.entries instead.', object: '_', property: 'toPairs' },
