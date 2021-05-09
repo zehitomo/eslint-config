@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.3.1
+
+- Add `_.takeRight` to restricted methods
+
 ## 4.3.0
 
 - Bump `eslint` version to `7.26.0`
