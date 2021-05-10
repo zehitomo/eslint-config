@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.4.0
+
+- Bump `prettier` version to `2.3.0`
+
 ## 4.3.1
 
 - Add `_.takeRight` to restricted methods
