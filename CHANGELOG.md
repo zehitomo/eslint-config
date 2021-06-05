@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.6.0
+
+- Bump `eslint` version to `7.28.0`
+
 ## 4.5.0
 
 - Bump `eslint` version to `7.27.0`
