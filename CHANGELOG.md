@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.7.1
+
+- Bump `eslint` version to `7.29.0`
+- Bump `prettier` version to `2.3.2`
+
 ## 4.7.0
 
 - Bump `eslint` version to `7.29.0`
