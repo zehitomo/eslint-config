@@ -1,4 +1,4 @@
-# Zehitomo React/JSX Style Guide
+# React/JSX Style Guide
 
 > A human-first approach to React and JSX
 

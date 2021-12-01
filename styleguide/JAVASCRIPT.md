@@ -1,4 +1,4 @@
-# Zehitomo JavaScript Style Guide
+# JavaScript Style Guide
 
 > A human-first approach to JavaScript.
 
@@ -2438,11 +2438,11 @@
 - [23.8](#naming--PascalCase-singleton) Use PascalCase when you export a constructor / class / singleton / function library / bare object.
 
   ```javascript
-  const ZehitomoStyleGuide = {
+  const StyleGuide = {
     es6: {},
   };
 
-  export default ZehitomoStyleGuide;
+  export default StyleGuide;
   ```
 
 <a name="naming--uppercase"></a>
@@ -2650,7 +2650,6 @@ contains utilities that are functionally broken but remain for legacy reasons.
 
   - Whichever testing framework you use, you should be writing tests!
   - Strive to write many small pure functions, and minimize where mutations occur.
-  - We primarily use [`mocha`](https://www.npmjs.com/package/mocha), [`jest`](https://www.npmjs.com/package/jest), and [`cypress`](https://www.npmjs.com/package/cypress) at Zehitomo.
   - 100% test coverage is a good goal to strive for, even if it's not always practical to reach it.
   - Whenever you fix a bug, _write a regression test_. A bug fixed without a regression test is almost certainly going to break again in the future.
 
