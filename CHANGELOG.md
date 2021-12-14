@@ -1,5 +1,10 @@
 # Changelog
 
+## 5.1.0
+
+- Update `eslint` version to `8.4.1`
+- Update `prettier` version to `2.5.1`
+
 ## 5.0.0
 
 - Upgrade `eslint` version to `8.3.0`
