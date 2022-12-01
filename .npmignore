@@ -1,0 +1,11 @@
+# .gitignore
+node_modules
+
+.vscode
+
+# .npmignore
+.husky
+styleguide
+
+.lintstagedrc
+CHANGELOG.md
