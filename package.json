@@ -5,10 +5,6 @@
   "main": "index.js",
   "author": "Zehitomo",
   "contributors": [
-    {
-      "email": "david@zehitomo.com",
-      "name": "Dávid Richolm"
-    }
   ],
   "repository": {
     "type": "git",
