@@ -4,8 +4,7 @@
   "description": "ESLint shareable config for Zehitomo",
   "main": "index.js",
   "author": "Zehitomo",
-  "contributors": [
-  ],
+  "contributors": [],
   "repository": {
     "type": "git",
     "url": "github:zehitomo/eslint-config"
@@ -17,22 +16,19 @@
   ],
   "dependencies": {
     "cross-env": "7.0.3",
+    "eslint": "7.31.0",
+    "lint-staged": "14.0.1",
+    "prettier": "2.8.1",
+    "stylelint": "13.13.1",
     "eslint-config-prettier": "8.3.0",
     "stylelint-config-prettier": "8.0.2",
     "stylelint-config-sass-guidelines": "8.0.0"
   },
   "peerDependencies": {
-    "eslint": "7.31.0",
-    "husky": "6.0.0",
-    "lint-staged": "11.0.0",
-    "prettier": "2.8.1",
-    "stylelint": "13.13.1"
+    "husky": "6.0.0"
   },
   "devDependencies": {
-    "eslint": "7.31.0",
-    "husky": "6.0.0",
-    "lint-staged": "11.0.0",
-    "prettier": "2.8.1"
+    "husky": "6.0.0"
   },
   "scripts": {
     "postinstall": "cross-env-shell \"cd $INIT_CWD && npx husky install\""
