@@ -1,9 +1,15 @@
 # Changelog
 
+## 4.7.4
+
+- Move eslint, prettier, lintstaged to deps as this package is included as dev dependency in other repos AND the other repos currently use the --legacy-peer-deps flag which prevents installation of this package's peer dependencies.
+
 ## 4.7.3
+
 - Bump `prettier` version to `2.8.1`
 
 ## 4.7.2
+
 - Bump `eslint` version to `7.31.0`
 
 ## 4.7.1
