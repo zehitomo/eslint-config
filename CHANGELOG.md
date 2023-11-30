@@ -1,5 +1,15 @@
 # Changelog
 
+## 5.3.0
+
+- Upgrade `eslint-config-prettier` version to `9.0.0`
+- Upgrade `lint-staged` version to `15.1.0`
+- Upgrade `prettier` version to `3.1.0`
+- Update `eslint` version to `8.54.0`
+- Update `husky` version to `8.0.3`
+- Update `stylelint-config-prettier` version to `9.0.5`
+- Update `stylelint` version to `14.16.1`
+
 ## 5.2.0
 
 - Upgrade `husky` version to `8.0.2`
